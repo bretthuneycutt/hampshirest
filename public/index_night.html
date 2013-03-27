@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="description" content="The Hampshire St. Experiment is a start up based in San Francisco's Mission District.  We are three friends with different backgrounds and skill sets that are starting a business together." />
+	<meta name="keywords" content="Brett, Huneycutt, Jonathan, Good, Rudy, Adler, Hampshire, St., Street, Experiment, Inc." />
+	<meta name="author" content="Hampshire St. Experiment, Inc." />
+
+
+	<title>hampshire.st</title>
+
+	<link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
+	<link rel="stylesheet" type="text/css" href="css/other.css">
+
+
+	<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
+	<script type="text/javascript">Shadowbox.init({
+		showMovieControls:	false,
+		handleOversize:		"resize"
+
+	});
+	</script>
+
+	<script type="text/javascript">
+		<!--
+		// Mouseover code
+		// copyright 1999 Idocs, Inc. http://www.idocs.com/tags/
+		// Distribute this script freely, but please keep this
+		// notice with the code.
+
+		var rollOverArr=new Array();
+		function setrollover(OverImgSrc,pageImageName)
+		{
+		if (! document.images)return;
+		if (pageImageName == null)
+		    pageImageName = document.images[document.images.length-1].name;
+		rollOverArr[pageImageName]=new Object;
+		rollOverArr[pageImageName].overImg = new Image;
+		rollOverArr[pageImageName].overImg.src=OverImgSrc;
+		}
+
+		function rollover(pageImageName)
+		{
+		if (! document.images)return;
+		if (! rollOverArr[pageImageName])return;
+		if (! rollOverArr[pageImageName].outImg)
+		    {
+		    rollOverArr[pageImageName].outImg = new Image;
+		    rollOverArr[pageImageName].outImg.src = document.images[pageImageName].src;
+		    }
+		document.images[pageImageName].src=rollOverArr[pageImageName].overImg.src;
+		}
+
+		function rollout(pageImageName)
+		{
+		if (! document.images)return;
+		if (! rollOverArr[pageImageName])return;
+		document.images[pageImageName].src=rollOverArr[pageImageName].outImg.src;
+		}
+		//-->
+	</script>
+
+	<script type="text/javascript">
+	<!--
+	// Funcionality for toggling DIV layers, i.e., fire, off and on
+	    function toggle_visibility(id) {
+	       var e = document.getElementById(id);
+	       if(e.style.display == 'block')
+	          e.style.display = 'none';
+	       else
+	          e.style.display = 'block';
+	    }
+	//-->
+	</script>
+
+
+	<script TYPE="text/javascript"> <!--
+		// Mouse roll over code
+		setrollover('images/about_night_rollover.png', 'about_night');
+		setrollover('images/bh_night_rollover.png', 'bh_night');
+		setrollover('images/blog_night_rollover.png', 'blog_night');
+		setrollover('images/hse_night_rollover.png', 'hse_night');
+		setrollover('images/jg_night_rollover.png', 'jg_night');
+		setrollover('images/ra_night_rollover.png', 'ra_night');
+		setrollover('images/kitchen_night.png', 'kitchen_night');
+		setrollover('images/jgroom_night.png', 'jgroom_night');
+		setrollover('images/bhroom_night.png', 'bhroom_night');
+		setrollover('images/raroom_night.png', 'raroom_night');
+		setrollover('images/door_night.png', 'door_night');
+	//-->
+	</script>
+
+</head>
+
+<body>
+
+<div id="house"
+	style="
+		top: 0px;
+		left: 0px;
+		position: absolute;
+		z-index: -1;
+		visibility: show;">
+	<img src="images/house_night.jpg">
+</div>
+
+<div id="houseOnFire"
+	style="
+	    top: 17px;
+		left: 0px;
+		position: absolute;
+		z-index: 10;
+		display: none;
+		">
+	<a href="javascript:toggle_visibility('houseOnFire');" onclick="toggle_visibility('rooms');">
+		<img src="images/fire_test.gif"></a>
+	<embed src="sounds/fire.wav" hidden="true" autostart="true" loop="true">
+
+</div>
+
+<div id="text"
+	style="
+		top: 32px;
+		left: 25px;
+		position: absolute;
+		z-index: 1;
+		visibility: show;">
+
+
+	<div id="hse"
+		style="
+			top: 0px;
+			left: 0px;
+			position: absolute;
+			z-index: 1;
+			visibility: show;">
+
+		<A HREF="images/about.jpg" rel="shadowbox" onMouseOver = "rollover('hse_night')" onMouseOut  = "rollout('hse_night')">
+		<IMG SRC="images/hse_night.png" NAME="hse_night" BORDER=0></a>
+
+	</div>
+
+	<div id="about"
+		style="
+			top: 30px;
+			left: 0px;
+			position: absolute;">
+
+		<A HREF="images/about.jpg" rel="shadowbox" onMouseOver = "rollover('about_night')" onMouseOut  = "rollout('about_night')">
+		<IMG SRC="images/about_night.png" NAME="about_night" BORDER=0> </a>
+	</div>
+
+<!-- 	<div id="dash"
+		style="
+			top: 30px;
+			left: 38px;
+			position: absolute;
+			z-index: 1;
+			visibility: show;">
+
+		<IMG SRC="images/dash_night.png" BORDER=0>
+	</div>
+
+	<div id="blog"
+		style="
+			top: 30px;
+			left: 52px;
+			position: absolute;">
+
+		<A HREF="/blog/" onMouseOver = "rollover('blog_night')" onMouseOut  = "rollout('blog_night')">
+		<IMG SRC="images/blog_night.png" NAME="blog_night" BORDER=0> </A>
+	</div> -->
+
+	<div id="ra"
+		style="
+			top: 52px;
+			left: 0px;
+			position: absolute;">
+
+		<A HREF="images/rabio.jpg" rel="shadowbox" onMouseOver = "rollover('ra_night')" onMouseOut  = "rollout('ra_night')">
+		<IMG SRC="images/ra_night.png" NAME="ra_night" BORDER=0> </A>
+	</div>
+
+	<div id="jg"
+		style="
+			top: 68px;
+			left: 0px;
+			position: absolute;">
+
+		<A HREF="images/jgbio.jpg" rel="shadowbox" onMouseOver = "rollover('jg_night')" onMouseOut  = "rollout('jg_night')">
+		<IMG SRC="images/jg_night.png" NAME="jg_night" BORDER=0> </A>
+	</div>
+
+	<div id="bh"
+		style="
+			top: 84px;
+			left: 0px;
+			position: absolute;">
+
+		<A HREF="images/bhbio.jpg" rel="shadowbox" onMouseOver = "rollover('bh_night')" onMouseOut  = "rollout('bh_night')">
+		<IMG SRC="images/bh_night.png" NAME="bh_night" BORDER=0> </A>
+	</div>
+
+
+</div>
+
+
+<div id="rooms"
+	style="
+		top: 135px;
+		left: 302px;
+		position: absolute;
+		z-index: 2;
+		display: block;">
+
+	<div id="kitchen"
+		style="
+			top: 12px;
+			left: 5px;
+			position: absolute;
+			z-index: 2;
+			display: block;">
+
+		<A HREF="video/kitchen_night.swf" rel="shadowbox;height=500;width=640;" onMouseOver = "rollover('kitchen_night')" onMouseOut  = "rollout('kitchen_night')">
+
+		<IMG SRC="images/kitchen_night_trans.png" NAME="kitchen_night" BORDER=0> </A>
+	</div>
+
+	<div id="jgroom"
+		style="
+			top: 13px;
+			left: 246px;
+			position: absolute;
+			z-index: 2;
+			visibility: show;">
+
+		<a href="javascript:toggle_visibility('houseOnFire');" onMouseOver = "rollover('jgroom_night')" onMouseOut  = "rollout('jgroom_night')" onclick="toggle_visibility('rooms');">
+		<IMG SRC="images/jgroom_night_trans.png" NAME="jgroom_night" BORDER=0> </A>
+        </div>
+
+	<div id="bhroom"
+		style="
+			top: 85px;
+			left: -19px;
+			position: absolute;
+			z-index: 2;
+			visibility: show;">
+
+		<A HREF="tweets.html" rel="shadowbox;height=500;width=720;" onMouseOver = "rollover('bhroom_night')" onMouseOut  = "rollout('bhroom_night')">
+		<IMG SRC="images/bhroom_night_trans.png" NAME="bhroom_night" BORDER=0> </A>
+	</div>
+
+    <div id="raroom"
+		style="
+			top: 84px;
+			left: 274px;
+			position: absolute;
+			z-index: 2;
+			visibility: show;">
+
+		<A HREF="http://www.formspring.me/hampshirest" rel="shadowbox;height=600;width=1000;" onMouseOver = "rollover('raroom_night')" onMouseOut  = "rollout('raroom_night')">
+		<IMG SRC="images/raroom_night_trans.png" NAME="raroom_night" BORDER=0> </A>
+	</div>
+
+
+	<div id="door"
+		style="
+			top: 282px;
+			left: -20px;
+			position: absolute;
+			z-index: 2;
+			visibility: show;">
+
+		<A HREF="images/experiment5.jpg" rel="shadowbox[Mixed]" onMouseOver = "rollover('door_night')" onMouseOut  = "rollout('door_night')">
+		<IMG SRC="images/door_night_trans.png" NAME="door_night" BORDER=0> </A>
+		<A HREF="images/experiment3.jpg" rel="shadowbox[Mixed]"></a>
+		<A HREF="images/experiment1.jpg" rel="shadowbox[Mixed]"></a>
+		<A HREF="images/experiment4.jpg" rel="shadowbox[Mixed]"></a>
+		<A HREF="images/experiment6.jpg" rel="shadowbox[Mixed]"></a>
+
+
+</div>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-15034122-1");
+		pageTracker._trackPageview();
+	}
+	catch(err) {}
+</script>
+
+</body>
+</html>

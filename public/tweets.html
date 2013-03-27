@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="description" content="The Hampshire St. Experiment is a start up based in San Francisco's Mission District.  We are three friends with different backgrounds and skill sets that are starting a business together." />
+	<meta name="keywords" content="Brett, Huneycutt, Jonathan, Good, Rudy, Adler, Hampshire, St., Street, Experiment, Inc." />
+	<meta name="author" content="Hampshire St. Experiment, Inc." />
+
+
+
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+}
+
+img {
+	border-style: none;
+}
+-->
+</style>
+
+
+</head>	
+
+<body>
+
+	<div id="tweets"
+	    style="
+	    	width: 700px;
+	    	margin-left: auto;
+			margin-right: auto;
+			z-index: 1;
+			position: relative;
+			visibility: show;">
+	
+	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+	<script>
+	new TWTR.Widget({
+	  version: 2,
+	  type: 'list',
+	  rpp: 30,
+	  interval: 6000,
+	  title: 'Tweets',
+	  width: 700,
+	  height: 420,
+	  theme: {
+	    shell: {
+	      background: '#ffffff',
+	      color: '#444444'
+	    },
+	    tweets: {
+	      background: '#ffffff',
+	      color: '#444444',
+	      links: '#0055b7'
+	    }
+	  },
+	  features: {
+	    scrollbar: true,
+	    loop: false,
+	    live: true,
+	    hashtags: true,
+	    timestamp: true,
+	    avatars: true,
+	    behavior: 'all'
+	  }
+	}).render().setList('HampshireSt', 'hse').start();
+	</script>
+
+</div>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-15034122-1");
+		pageTracker._trackPageview();
+	}
+	catch(err) {}
+</script>
+
+</body>
+</html>
